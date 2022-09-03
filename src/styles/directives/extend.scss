@@ -1,0 +1,9 @@
+.block{
+    background-color: gray;
+    width: 20%;
+    height: 50px
+}
+.my-block{
+    @extend .block;
+    border-radius: 10px;
+}

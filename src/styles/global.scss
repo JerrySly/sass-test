@@ -1,0 +1,17 @@
+@import "variables";
+@import "blocks";
+@import "scripts";
+@import "directives";
+@import "mixins";
+
+.locale-imported{
+    @import "./directives/importing.scss";
+}
+
+body{
+    div{
+        @include main {
+            border-color:aqua;
+        };
+    }
+}

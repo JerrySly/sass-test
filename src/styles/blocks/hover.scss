@@ -1,0 +1,27 @@
+$condition: min-width;
+$value: 900px;
+
+.hover-block {
+    display: flex;
+    justify-content: center;
+    .item {
+        width: 400px;
+        height: 100px;
+        background-color: rgb(212, 163, 117);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        &:hover {
+            background-color: rgb(216, 130, 50);
+            @media screen and ($condition: $value){
+                background-color: rgb(241, 239, 237);
+            }
+        }
+        &-blue:hover{
+            background-color: rgb(50, 136, 216);
+            @media screen  and ($condition: $value){
+                background-color: rgb(8, 8, 8);
+            }
+        }
+    }
+}

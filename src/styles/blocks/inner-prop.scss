@@ -1,0 +1,18 @@
+.inner-block{
+    height: 120px;
+    padding: 20px;
+    background: {
+        color: rgb(91, 197, 211);
+    }
+    margin:{
+        top: 20px;
+        right: 100px;
+        left: 100px;
+    }
+    border: {
+        radius: 10px;
+        color: rgb(219, 82, 82);
+        width: 3px;
+        style: dashed;
+    }
+}

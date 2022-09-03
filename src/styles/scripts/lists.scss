@@ -1,0 +1,28 @@
+.list-example {
+    text-align: nth(center left, 1 );
+    color: white;
+    box-shadow: append((1px 2px), (100px red));
+    border-radius: 20px;
+}
+
+.text-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+}
+
+//maps
+$type-color:(
+    employee: green,
+    manager: rgb(48, 100, 212),
+    admin: rgb(223, 71, 33)
+);
+
+.text{
+    @each $type,$color in $type-color {
+        &--#{$type} {
+            color: $color
+        }
+    }
+ 
+}
